@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title id="title">Welcome</title>
+    <link rel="stylesheet" href="css/home.css" />
+    <link rel="stylesheet" href="css/home_mobile.css" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inria+Sans&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div class="left-container">
+      <a href="#" onclick="openNav()" id="hamburger-menu"
+        ><span class="material-icons">
+          menu
+        </span></a
+      >
+      <nav id="navbar" class="navbar-closed">
+        <div id="menu-close-btn-container">
+          <a href="#" id="menu-close-btn" onclick="closeNav()">&times;</a>
+        </div>
+        <a href="index.html" class="navbar-link">
+          <span class="material-icons menu-icons">home</span>Home
+        </a>
+        <hr />
+        <a href="to_do_list.html" class="navbar-link">
+          <span class="material-icons menu-icons">list</span>To Do List
+        </a>
+        <hr />
+        <a href="bookmarker.html" class="navbar-link">
+          <span class="material-icons menu-icons">bookmarks</span>Bookmarker
+        </a>
+        <hr />
+        <a href="weather.html" class="navbar-link">
+          <span class="material-icons menu-icons">wb_cloudy</span>Weather
+        </a>
+        <hr />
+      </nav>
+    </div>
+
+    <div class="center-container">
+      <time id="time">N/A</time>
+      <h1>
+        <span id="greeting"></span>
+        <span id="name" spellcheck="false" contenteditable="true"></span>
+      </h1>
+      <h2 id="focus-header">What are you going to accomplish today?</h2>
+      <h2 id="focus" contenteditable="true" spellcheck="false"></h2>
+    </div>
+
+    <div class="right-container">
+      <div class="weather">
+        <a
+          class="weather-link"
+          href="weather.html"
+          title="click here for more details"
+        >
+          <div class="location-timezone weather-content">
+            Please enable location to access weather
+          </div>
+          <div class="temperature weather-content">
+            <span></span> <span></span>
+          </div>
+          <div class="weather-summary weather-content"></div>
+        </a>
+      </div>
+    </div>
+    <script src="js/home.js"></script>
+    <script src="js/home_weather.js"></script>
+  </body>
+</html>

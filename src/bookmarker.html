@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>My Bookmarker</title>
+
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/" />
+
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+
+    <link href="css/bookmarker.css" rel="stylesheet" />
+    <link href="css/bookmarker_mobile.css" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Karla&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div class="left-container">
+      <a href="#" onclick="openNav()" id="hamburger-menu"
+        ><span class="material-icons">
+          menu
+        </span></a
+      >
+      <nav id="navbar" class="navbar-closed">
+        <div id="menu-close-btn-container">
+          <a href="#" id="menu-close-btn" onclick="closeNav()">&times;</a>
+        </div>
+        <a href="index.html" class="navbar-link">
+          <span class="material-icons menu-icons">home</span>Home
+        </a>
+        <hr />
+        <a href="to_do_list.html" class="navbar-link">
+          <span class="material-icons menu-icons">list</span>To Do List
+        </a>
+        <hr />
+        <a href="bookmarker.html" class="navbar-link">
+          <span class="material-icons menu-icons">bookmarks</span>Bookmarker
+        </a>
+        <hr />
+        <a href="weather.html" class="navbar-link">
+          <span class="material-icons menu-icons">wb_cloudy</span>Weather
+        </a>
+        <hr class="menu-lines" />
+      </nav>
+    </div>
+
+    <div class="container">
+      <div class="header clearfix">
+        <h3 class="top-heading">My Favorite Sites</h3>
+      </div>
+      <div id="flex-container">
+        <div class="jumbotron" data-jumbotron>
+          <div id="jumbo-heading">
+            <h2>Bookmark Your favorite sites</h2>
+          </div>
+
+          <div id="jumbo-bottom">
+            <form id="form" action="#" data-form>
+              <div class="form-group">
+                <label class="input-labels">Website Name</label>
+                <input
+                  type="text"
+                  id="site-name"
+                  class="form-control"
+                  placeholder="website name"
+                />
+              </div>
+
+              <div class="form-group">
+                <label class="input-labels">Website Url</label>
+                <input
+                  type="text"
+                  id="site-url"
+                  class="form-control"
+                  placeholder="ex: www.google.com"
+                />
+                <button id="submit-btn" class="btn btn-primary">Submit</button>
+              </div>
+            </form>
+          </div>
+        </div>
+
+        <div class="bookmark-results" data-bookmarks-results>
+          <div class="well"></div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.1.1.js"
+      integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA="
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bookmarker.js"></script>
+  </body>
+</html>

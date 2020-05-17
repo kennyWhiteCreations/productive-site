@@ -1,0 +1,94 @@
+@media only screen and (max-width: 800px) {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  .top-heading {
+    margin-left: 15vh;
+    margin-top: 2vh;
+  }
+
+  #flex-container {
+    flex-direction: column;
+    margin-top: 5vh;
+    margin-left: 2vh;
+    margin-right: 2vh;
+  }
+
+  .website-heading {
+    justify-content: flex-end;
+  }
+}
+
+@media only screen and (min-width: 2000px) {
+  .header {
+    margin-top: 20vh;
+  }
+
+  .top-heading {
+    font-size: 5rem;
+    height: 6vh;
+  }
+  #flex-container {
+    width: 50vw;
+  }
+
+  .jumbotron {
+    height: auto;
+    width: 50vw;
+    font-size: 3rem;
+  }
+
+  .jumbo-heading {
+    height: 10vh;
+  }
+
+  h2 {
+    font-size: 5rem;
+  }
+
+  .form-control {
+    height: 5vh;
+    font-size: 3rem;
+  }
+  #submit-btn {
+    height: 6vh;
+    width: 8vw;
+    font-size: 3rem;
+  }
+
+  .website-name {
+    font-size: 5rem;
+  }
+
+  .btn {
+    font-size: 4rem;
+    width: 6vw;
+    height: 6vh;
+  }
+
+  .navbar-link {
+    font-size: 4rem;
+  }
+
+  #hamburger-menu span {
+    font-size: 20rem;
+  }
+  #navbar {
+    line-height: 10rem;
+  }
+
+  .navbar-link {
+    line-height: 5rem;
+  }
+
+  .material-icons.menu-icons {
+    font-size: 5rem;
+  }
+
+  #menu-close-btn {
+    font-size: 10rem;
+  }
+}

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>My To Do List</title>
+    <link href="css/to_do_list.css" rel="stylesheet" />
+    <link href="css/to_do_list_mobile.css" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <a href="#" onclick="openNav()" id="hamburger-menu"
+      ><span class="material-icons">
+        menu
+      </span></a
+    >
+    <nav id="navbar" class="navbar-closed">
+      <div id="menu-close-btn-container">
+        <a href="#" id="menu-close-btn" onclick="closeNav()">&times;</a>
+      </div>
+      <a href="index.html" class="navbar-link">
+        <span class="material-icons menu-icons">home</span>Home
+      </a>
+      <hr />
+      <a href="to_do_list.html" class="navbar-link">
+        <span class="material-icons menu-icons">list</span>To Do List
+      </a>
+      <hr />
+      <a href="bookmarker.html" class="navbar-link">
+        <span class="material-icons menu-icons">bookmarks</span>Bookmarker
+      </a>
+      <hr />
+      <a href="weather.html" class="navbar-link">
+        <span class="material-icons menu-icons">wb_cloudy</span>Weather
+      </a>
+      <hr />
+    </nav>
+
+    <div class="containter">
+      <div class="heading-flex-container">
+        <div class="heading">
+          <h1>
+            My tasks for <span class="day-of-week-heading" data-heading></span>
+          </h1>
+          <h2 class="date" data-heading-date></h2>
+        </div>
+      </div>
+
+      <div class="body-container">
+        <div class="task-groups">
+          <div class="task-group-header header-background">
+            <h2 class="task-group-list">My Lists</h2>
+          </div>
+          <ul class="task-list" data-task-list></ul>
+
+          <form action="#" data-create-list-form>
+            <input
+              type="text"
+              class="new-list"
+              aria-label="new list name"
+              placeholder="create new list"
+              data-new-list-input
+            />
+            <button
+              class="create-btn"
+              aria-label="create new list"
+              data-create-list-btn
+            >
+              +
+            </button>
+          </form>
+        </div>
+
+        <div class="todo-list-container" data-list-display-container>
+          <div class="todo-list-header header-background" data-todo-list-header>
+            <h2 class="todo-list-title" data-list-heading>cooking</h2>
+            <p class="tasks-counter" data-tasks-counter>1 task remaining</p>
+          </div>
+
+          <div class="todo-list-body">
+            <div class="group-of-tasks" data-tasks>
+              <div class="tasks">
+                <input type="checkbox" id="task-1" />
+                <label for="task-1"> <span>finish js for site</span> </label>
+              </div>
+              <div class="tasks">
+                <input type="checkbox" id="task-1" />
+                <label for="task-1"> <span>start new project</span> </label>
+              </div>
+            </div>
+          </div>
+
+          <div class="new-task-creator">
+            <form action="#" class="task-form" data-create-task-form>
+              <input
+                type="text"
+                class="new-task"
+                placeholder="new task name"
+                aria-label="new task name"
+                data-new-task-input
+              />
+              <button class="create-btn task-create-btn">+</button>
+            </form>
+          </div>
+
+          <div class="delete-btns">
+            <button class="task-delete" data-clear-completed-tasks>
+              Clear completed tasks
+            </button>
+            <button class="task-delete delete-list" data-delete-selected-list>
+              Delete selected list
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <template id="task-template">
+      <div class="tasks">
+        <input type="checkbox" />
+        <label> <span></span> </label>
+      </div>
+    </template>
+    <script src="js/to_do_list.js"></script>
+  </body>
+</html>

@@ -1,0 +1,111 @@
+@media only screen and (max-width: 650px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .body-container {
+    flex-direction: column;
+  }
+
+  .heading {
+    margin-top: 20vh;
+  }
+
+  .task-groups {
+    width: 60vw;
+    margin: 0 auto;
+  }
+
+  .todo-list-container {
+    width: 80vw;
+    margin: 0 auto;
+    margin-top: 10vh;
+  }
+
+  .heading {
+    margin-top: 20vh;
+  }
+
+  .body-container {
+    flex-direction: column;
+  }
+
+  .task-groups {
+    width: 60vw;
+    margin: 0 auto;
+  }
+
+  .todo-list-container {
+    width: 80vw;
+    margin: 0 auto;
+    margin-top: 10vh;
+  }
+}
+
+@media only screen and (min-width: 2000px) {
+  .heading-flex-container {
+    font-size: 6rem;
+  }
+
+  .task-list-name {
+    font-size: 3rem;
+  }
+
+  .new-list {
+    font-size: 3rem;
+  }
+
+  .task-groups > form:nth-child(3) > button:nth-child(2) {
+    font-size: 4rem;
+  }
+
+  .todo-list-title {
+    font-size: 6rem;
+  }
+
+  .task-groups {
+    font-size: 6rem;
+  }
+
+  .todo-list-container {
+    font-size: 8rem;
+  }
+
+  .tasks-counter {
+    font-size: 5rem;
+  }
+
+  .new-task {
+    font-size: 4rem;
+  }
+
+  .task-create-btn {
+    font-size: 5rem;
+  }
+
+  .navbar-link {
+    font-size: 4rem;
+    line-height: 8rem;
+  }
+
+  button.task-delete:nth-child(1) {
+    font-size: 4rem;
+  }
+
+  button.task-delete:nth-child(2) {
+    font-size: 4rem;
+  }
+
+  #hamburger-menu > span:nth-child(1) {
+    font-size: 20rem;
+  }
+
+  .menu-icons {
+    font-size: 5rem;
+  }
+
+  #menu-close-btn {
+    font-size: 10rem;
+  }
+}

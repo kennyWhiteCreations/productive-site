@@ -1,0 +1,271 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background: linear-gradient(#021f40, #4d4094);
+  color: #ffffff;
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+#hamburger-menu {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+#hamburger-menu span {
+  font-size: 7rem;
+  color: #fff;
+}
+
+#navbar {
+  font-family: "Noto Sans TC", sans-serif;
+}
+
+.navbar-open {
+  width: 25vw;
+  opacity: 0.8;
+  height: 100vh;
+  visibility: visible;
+  background-color: #111;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+}
+
+.navbar-closed {
+  opacity: 0;
+  width: 0;
+  height: 0;
+  visibility: hidden;
+  font-family: "Noto Sans TC", sans-serif;
+}
+
+#menu-close-btn-container {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 2rem;
+}
+
+#menu-close-btn {
+  border: none;
+  font-size: 3rem;
+  color: #fff;
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+}
+
+.navbar-link {
+  display: flex;
+  align-items: center;
+  font-size: 1.5rem;
+  line-height: 3rem;
+  justify-content: start;
+  text-decoration: none;
+  color: #fff;
+}
+
+.menu-lines {
+  color: #eee;
+  opacity: 0.6;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+.navbar-link:hover {
+  background-color: #333;
+}
+
+.material-icons {
+  margin-right: 2rem;
+  margin-left: 1rem;
+}
+
+.weather-overview {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  line-height: 2rem;
+  margin-top: 5vh;
+}
+
+.weather-heading {
+  display: flex;
+}
+
+#location-timezone {
+  margin-bottom: 5vh;
+  font-size: 2rem;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+#icon {
+  width: 64px;
+  height: 64px;
+}
+#icon-element {
+  display: inline;
+}
+
+#temperature {
+  font-size: 4rem;
+  padding-top: 3vh;
+  padding-left: 1vw;
+}
+#summary {
+  font-size: 2rem;
+}
+
+.last-updated {
+  display: inline;
+}
+
+.daily-container {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  display: flex;
+  flex-direction: row;
+  height: 40vh;
+  justify-content: center;
+  margin-top: 5vh;
+  margin-bottom: -10vh;
+  margin-right: 5vh;
+}
+
+.daily-heading {
+  margin-right: 5vh;
+  font-size: 2rem;
+  padding-left: 10vh;
+}
+
+.daily-boxes {
+  height: 90%;
+  width: 12%;
+  text-align: center;
+  line-height: 2rem;
+  font-size: 1.3rem;
+  padding-bottom: 15vh;
+  background-color: transparent;
+  color: #fff;
+  border: none;
+  margin-left: 1rem;
+  margin-left: 1rem;
+}
+
+.daily-boxes:hover {
+  border: solid #fff 2px;
+  border-radius: 20px;
+  height: 45vh;
+}
+
+.high-temp {
+  display: inline;
+  font-size: 1.5rem;
+}
+
+.low-temp {
+  display: inline;
+  font-size: 1rem;
+}
+
+hr {
+  margin-top: 15vh;
+}
+
+.hourly-container {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  display: flex;
+  flex-direction: row;
+  height: 40vh;
+  justify-content: center;
+  margin-top: 5vh;
+  font-size: 1.2rem;
+}
+
+.hourly-heading {
+  margin-right: 0;
+  font-size: 2rem;
+  padding-left: 4vw;
+}
+
+.hourly-boxes {
+  height: auto;
+  width: 12%;
+  text-align: center;
+  line-height: 2rem;
+  font-size: 1.5rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.precip-flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.wind-flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.wind-logo {
+  padding-right: 0.5rem;
+}
+.wind-mph {
+  font-size: 1.2rem;
+}
+
+.hour {
+  font-size: 1.4rem;
+}
+
+.hourly-boxes:hover {
+  border: solid #fff 2px;
+  border-radius: 20px;
+}
+
+.precip-logo {
+  display: inline;
+}
+
+.precip-text {
+  display: inline;
+  margin-left: 0.5rem;
+}
+
+#credit-link {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+#flaticon-credit a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+#credit-link:hover,
+#flaticon-credit a:hover {
+  color: green;
+}

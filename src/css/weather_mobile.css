@@ -1,0 +1,332 @@
+@media only screen and (max-width: 900px) {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  .navbar-open {
+    width: 100%;
+  }
+  .weather-overview {
+    margin-top: 15vh;
+    margin-left: 3vh;
+  }
+
+  .location-timezone {
+    padding-right: 5vw;
+    font-size: 1.7rem;
+  }
+
+  #summary {
+    padding-right: 5vw;
+    font-size: 1.7rem;
+  }
+
+  .daily-container {
+    justify-content: space-around;
+    height: 10vh;
+    width: 90%;
+    height: auto;
+    margin-right: 0;
+    line-height: 0.5rem;
+    padding-right: 5vw;
+  }
+
+  .daily-heading {
+    font-size: 1rem;
+    margin-right: 0;
+    padding-left: 5vw;
+  }
+
+  #daily-6,
+  #daily-7 {
+    display: none;
+  }
+
+  #daily-boxes {
+    width: 100%;
+    display: flex;
+  }
+  .daily-boxes {
+    font-size: 0.8rem;
+    border: none;
+    width: auto;
+  }
+
+  .daily-boxes:hover {
+    height: 10vh;
+  }
+
+  .high-temp {
+    font-size: 0.8rem;
+  }
+
+  .low-temp {
+    font-size: 0.5rem;
+  }
+
+  .daily-summary {
+    display: none;
+  }
+
+  .hourly-container {
+    justify-content: space-around;
+    line-height: 0.5rem;
+    padding-right: 5vw;
+    height: auto;
+  }
+
+  .hourly-heading {
+    padding: 0;
+    font-size: 1rem;
+    margin-right: 0;
+  }
+
+  #hourly-6,
+  #hourly-7 {
+    display: none;
+  }
+
+  .hourly-boxes {
+    font-size: 1rem;
+    width: auto;
+    margin: 0;
+    border: none;
+    align-items: center;
+  }
+
+  .hourly-icon {
+    font-size: 0.8rem;
+    line-height: 1rem;
+  }
+
+  .hourly-temp {
+    font-size: 0.8rem;
+  }
+
+  .precip-logo {
+    display: none;
+  }
+
+  .precip-text {
+    font-size: 1rem;
+  }
+
+  .wind-logo img {
+    display: none;
+  }
+
+  .wind-mph {
+    font-size: 0.8rem;
+  }
+
+  .wind-logo {
+    font-size: 0.8rem;
+  }
+
+  .hour {
+    font-size: 0.8rem;
+  }
+}
+
+@media only screen and (min-height: 960px) {
+  .daily-container {
+    height: 20vh;
+  }
+
+  #day-1,
+  #day-2,
+  #day-3,
+  #day-4,
+  #day-5,
+  #day-6,
+  #day-7 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .daily-boxes {
+    line-height: initial;
+    width: auto;
+  }
+
+  .daily-heading {
+    font-size: 1.5rem;
+  }
+
+  #daily-1,
+  #daily-2,
+  #daily-3,
+  #daily-4,
+  #daily-5,
+  #daily-6,
+  #daily-7 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  .high-temp {
+    font-size: 2rem;
+  }
+
+  .low-temp {
+    font-size: 1rem;
+  }
+
+  .hourly-icon {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  .hourly-temp {
+    font-size: 2rem;
+  }
+
+  .precip-text {
+    font-size: 1.5rem;
+  }
+}
+
+.wind-mph {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.hour {
+  font-size: 1.5rem;
+  margin-bottom: 5vh;
+}
+
+@media only screen and (min-width: 2000px) {
+  #location-timezone {
+    font-size: 7rem;
+  }
+
+  .weather-overview {
+    height: 20vh;
+    line-height: 4rem;
+    margin-bottom: 10vh;
+  }
+
+  #icon {
+    height: 150px;
+    width: 150px;
+    margin-top: 1vh;
+  }
+
+  #temperature {
+    font-size: 10rem;
+    padding-top: 3vh;
+  }
+
+  #summary {
+    font-size: 5rem;
+    margin-bottom: 1vh;
+  }
+
+  .last-updated {
+    font-size: 4rem;
+    margin-bottom: 1vh;
+  }
+
+  #last-updated {
+    font-size: 3rem;
+  }
+
+  .daily-heading {
+    font-size: 4rem;
+  }
+
+  .daily-container {
+    margin-top: 8vh;
+  }
+
+  #day-1,
+  #day-2,
+  #day-3,
+  #day-4,
+  #day-5,
+  #day-6,
+  #day-7 {
+    font-size: 4rem;
+  }
+
+  #daily-1,
+  #daily-2,
+  #daily-3,
+  #daily-4,
+  #daily-5,
+  #daily-6,
+  #daily-7 {
+    margin-bottom: 2vh;
+    font-size: 5rem;
+  }
+
+  .high-temp {
+    font-size: 5rem;
+  }
+
+  .low-temp {
+    font-size: 4rem;
+  }
+
+  .daily-summary {
+    margin-top: 2vh;
+    font-size: 3rem;
+  }
+
+  .hourly-heading {
+    font-size: 4rem;
+  }
+
+  .hourly-icon {
+    font-size: 4rem;
+    line-height: 3vh;
+  }
+
+  .hourly-temp {
+    font-size: 4rem;
+  }
+
+  .precip-logo {
+    width: 48px;
+    height: 48px;
+  }
+
+  .precip-text {
+    font-size: 4rem;
+  }
+
+  .wind-mph {
+    font-size: 3.5rem;
+  }
+
+  .hour {
+    font-size: 3.5rem;
+  }
+
+  #hamburger-menu > span:nth-child(1) {
+    font-size: 20rem;
+  }
+
+  .navbar-link {
+    font-size: 4rem;
+    line-height: 9rem;
+  }
+
+  .material-icons {
+    font-size: 4rem;
+  }
+
+  #menu-close-btn {
+    font-size: 9rem;
+  }
+
+  #credit-link {
+    font-size: 4rem;
+  }
+  #flaticon-credit {
+    font-size: 4rem;
+  }
+}

@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Weather</title>
+    <link rel="stylesheet" href="css/weather.css" />
+    <link rel="stylesheet" href="css/weather_mobile.css" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <a href="#" id="hamburger-menu"
+      ><span class="material-icons">
+        menu
+      </span></a
+    >
+    <nav id="navbar" class="navbar-closed">
+      <div id="menu-close-btn-container">
+        <a href="#" id="menu-close-btn">&times;</a>
+      </div>
+      <a href="index.html" class="navbar-link">
+        <span class="material-icons" style="font-size: 4vh;">home</span>Home
+      </a>
+      <hr class="menu-lines" />
+      <a href="to_do_list.html" class="navbar-link">
+        <span class="material-icons" style="font-size: 4vh;">list</span>To Do
+        List
+      </a>
+      <hr class="menu-lines" />
+      <a href="bookmarker.html" class="navbar-link">
+        <span class="material-icons" style="font-size: 4vh;">bookmarks</span
+        >Bookmarker
+      </a>
+      <hr class="menu-lines" />
+      <a href="weather.html" class="navbar-link">
+        <span class="material-icons" style="font-size: 4vh;">wb_cloudy</span
+        >Weather
+      </a>
+      <hr class="menu-lines" />
+    </nav>
+
+    <div class="container">
+      <div class="weather-overview">
+        <h3 id="location-timezone">n/a</h3>
+        <div class="weather-heading">
+          <div id="icon-element">
+            <img alt="main logo" id="icon" src="images/placeholder.svg" />
+          </div>
+          <h1 id="temperature">n/a;</h1>
+        </div>
+        <h3 id="summary">n/a</h3>
+        <span class="last-updated">last updated as of</span>
+        <span class="last-updated" id="last-updated"></span>
+      </div>
+      <div class="daily-container">
+        <h3 class="daily-heading">Daily</h3>
+
+        <div class="daily-boxes" id="daily-1">
+          <p id="day-1"></p>
+          <p id="date-1"></p>
+          <span class="high-temp"></span> <span class="low-temp"></span>
+          <p class="daily-summary"></p>
+        </div>
+
+        <div class="daily-boxes" id="daily-2">
+          <p id="day-2"></p>
+          <p id="date-2"></p>
+          <span class="high-temp"></span> <span class="low-temp"></span>
+          <p class="daily-summary"></p>
+        </div>
+
+        <div class="daily-boxes" id="daily-3">
+          <p id="day-3"></p>
+          <p id="date-3"></p>
+          <span class="high-temp"></span> <span class="low-temp"></span>
+          <p class="daily-summary"></p>
+        </div>
+
+        <div class="daily-boxes" id="daily-4">
+          <p id="day-4"></p>
+          <p id="date-4"></p>
+          <span class="high-temp"></span> <span class="low-temp"></span>
+          <p class="daily-summary"></p>
+        </div>
+
+        <div class="daily-boxes" id="daily-5">
+          <p id="day-5"></p>
+          <p id="date-5"></p>
+          <span class="high-temp"></span> <span class="low-temp"></span>
+          <p class="daily-summary"></p>
+        </div>
+
+        <div class="daily-boxes" id="daily-6">
+          <p id="day-6"></p>
+          <p id="date-6"></p>
+          <span class="high-temp"></span> <span class="low-temp"></span>
+          <p class="daily-summary"></p>
+        </div>
+
+        <div class="daily-boxes" id="daily-7">
+          <p id="day-7"></p>
+          <p id="date-7"></p>
+          <span class="high-temp"></span> <span class="low-temp"></span>
+          <p class="daily-summary"></p>
+        </div>
+      </div>
+
+      <hr />
+
+      <div class="hourly-container">
+        <h3 class="hourly-heading">Hourly</h3>
+        <div class="hourly-boxes" id="hourly-1">
+          <div class="hourly-icon"></div>
+          <p class="hourly-temp"></p>
+
+          <div class="precip-flex">
+            <img
+              class="precip-logo"
+              alt="precipitation logo"
+              src="images/rain_icon.png"
+            />
+            <p class="precip-text"></p>
+          </div>
+
+          <div class="wind-flex">
+            <p class="wind-logo">
+              <img alt="wind logo" src="images/windy_icon.png" />
+            </p>
+            <p class="wind-mph"></p>
+          </div>
+          <p class="hour"></p>
+        </div>
+
+        <div class="hourly-boxes" id="hourly-2">
+          <div class="hourly-icon"></div>
+          <p class="hourly-temp"></p>
+
+          <div class="precip-flex">
+            <img
+              alt="precipitation logo"
+              class="precip-logo"
+              src="images/rain_icon.png"
+            />
+            <p class="precip-text"></p>
+          </div>
+
+          <div class="wind-flex">
+            <p class="wind-logo">
+              <img alt="wind logo" src="images/windy_icon.png" />
+            </p>
+            <p class="wind-mph"></p>
+          </div>
+          <p class="hour"></p>
+        </div>
+
+        <div class="hourly-boxes" id="hourly-3">
+          <div class="hourly-icon"></div>
+          <p class="hourly-temp"></p>
+
+          <div class="precip-flex">
+            <img
+              alt="precipitation logo"
+              class="precip-logo"
+              src="images/rain_icon.png"
+            />
+            <p class="precip-text"></p>
+          </div>
+
+          <div class="wind-flex">
+            <p class="wind-logo">
+              <img alt="wind logo" src="images/windy_icon.png" />
+            </p>
+            <p class="wind-mph"></p>
+          </div>
+          <p class="hour"></p>
+        </div>
+
+        <div class="hourly-boxes" id="hourly-4">
+          <div class="hourly-icon"></div>
+          <p class="hourly-temp"></p>
+
+          <div class="precip-flex">
+            <img
+              alt="precipitation logo"
+              class="precip-logo"
+              src="images/rain_icon.png"
+            />
+            <p class="precip-text"></p>
+          </div>
+
+          <div class="wind-flex">
+            <p class="wind-logo">
+              <img alt="wind logo" src="images/windy_icon.png" />
+            </p>
+            <p class="wind-mph"></p>
+          </div>
+          <p class="hour"></p>
+        </div>
+
+        <div class="hourly-boxes" id="hourly-5">
+          <div class="hourly-icon"></div>
+          <p class="hourly-temp"></p>
+
+          <div class="precip-flex">
+            <img
+              alt="precipitation logo"
+              class="precip-logo"
+              src="images/rain_icon.png"
+            />
+            <p class="precip-text"></p>
+          </div>
+
+          <div class="wind-flex">
+            <p class="wind-logo">
+              <img alt="wind logo" src="images/windy_icon.png" />
+            </p>
+            <p class="wind-mph"></p>
+          </div>
+          <p class="hour"></p>
+        </div>
+
+        <div class="hourly-boxes" id="hourly-6">
+          <div class="hourly-icon"></div>
+          <p class="hourly-temp"></p>
+
+          <div class="precip-flex">
+            <img
+              alt="precipitation logo"
+              class="precip-logo"
+              src="images/rain_icon.png"
+            />
+            <p class="precip-text"></p>
+          </div>
+
+          <div class="wind-flex">
+            <p class="wind-logo">
+              <img alt="wind logo" src="images/windy_icon.png" />
+            </p>
+            <p class="wind-mph"></p>
+          </div>
+          <p class="hour"></p>
+        </div>
+
+        <div class="hourly-boxes" id="hourly-7">
+          <div class="hourly-icon"></div>
+          <p class="hourly-temp"></p>
+
+          <div class="precip-flex">
+            <img
+              alt="precipitation logo"
+              class="precip-logo"
+              src="images/rain_icon.png"
+            />
+            <p class="precip-text"></p>
+          </div>
+
+          <div class="wind-flex">
+            <p class="wind-logo">
+              <img alt="wind logo" src="images/windy_icon.png" />
+            </p>
+            <p class="wind-mph"></p>
+          </div>
+          <p class="hour"></p>
+        </div>
+      </div>
+    </div>
+
+    <a id="credit-link" href="https://darksky.net/dev">Powered By Dark Sky</a>
+    <div id="flaticon-credit">
+      Icons made by
+      <a href="https://www.flaticon.com/authors/freepik" title="Freepik"
+        >Freepik</a
+      >
+      from
+      <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
+    </div>
+
+    <script src="js/weather.js"></script>
+  </body>
+</html>
