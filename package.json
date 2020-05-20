@@ -5,10 +5,12 @@
   "main": "index.js",
   "scripts": {
     "dev": "parcel src/index.html",
-    "build": "parcel build src/index.html src/bookmarker.html src/to_do_list src/weather.html weather.js --public-url ./"
+    "build": "parcel build src/index.html src/bookmarker.html src/to_do_list src/weather.html weather.js --public-url ./",
+    "deploy": "gh-pages -d dist"
   },
   "author": "",
   "license": "ISC",
+  "homepage": "https://kennyWhiteCreations.github.io/productive-site",
   "devDependencies": {
     "parcel-bundler": "^1.12.4",
     "parcel-plugin-nuke-dist": "^1.0.1"
@@ -16,6 +18,7 @@
   "dependencies": {
     "@babel/polyfill": "^7.8.7",
     "core-js": "^3.6.5",
+    "gh-pages": "^2.2.0",
     "regenerator-runtime": "^0.13.5"
   }
 }

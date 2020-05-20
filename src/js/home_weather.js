@@ -23,7 +23,7 @@ window.addEventListener("load", () => {
       lat = position.coords.latitude;
       long = position.coords.longitude;
 
-      const proxy = "http://cors-anywhere.herokuapp.com/";
+      const proxy = "https://cors-anywhere.herokuapp.com/";
 
       const api = `${proxy}https://api.darksky.net/forecast/b051642d3f71f99e1303961e169087a5/${lat},${long}`;
 
@@ -55,7 +55,11 @@ window.addEventListener("load", () => {
             weatherBox.style.borderColor = "none";
 
             return true;
-          } else if (icon == "partly-cloudy-night") {
+          } else if (
+            icon == "partly-cloudy-night" ||
+            (icon == "cloudy" && hour >= 19 && hour <= 23) ||
+            (icon == "cloudy" && hour >= 0 && hour <= 6)
+          ) {
             document.body.style.backgroundImage =
               'URL("images/cloudy-night-compressed.jpg")';
             document.body.style.backgroundSize = "cover";
@@ -70,7 +74,7 @@ window.addEventListener("load", () => {
             document.body.style.backgroundRepeat = "no-repeat";
             weatherBox.style.color = "#fff";
             locationTimezone.style.color = "#fff";
-            time.style.color = "#777";
+            time.style.color = "#999";
             greeting.style.color = "#fff";
             name.style.color = "#fff";
             focus.style.color = "#fff";
@@ -125,14 +129,15 @@ window.addEventListener("load", () => {
             focus.style.color = "#fff";
             focusQuestion.style.color = "#fff";
             return true;
-          } else {
-            document.body.style.backgroundImage =
-              'url("file:///C:/Users/kenny/OneDrive/Documents/productive_app/images/lion_else_compressed.jpg")';
-            document.body.style.backgroundSize = "cover";
-            document.body.style.backgroundRepeat = "no-repeat";
-            return true;
           }
         });
     });
   }
+  function defaultBackgroundImage() {
+    document.body.style.backgroundImage =
+      'url("images/lion_else_compressed.jpg")';
+    document.body.style.backgroundSize = "cover";
+    document.body.style.backgroundRepeat = "no-repeat";
+  }
+  defaultBackgroundImage();
 });
